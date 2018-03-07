@@ -1,0 +1,22 @@
+<h1>New Test</h1>
+
+
+<%= form_with model: @actualtests, local: true do |form| %>
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+   
+    <p>
+      <%= form.label :"string length" %><br>
+      <%= form.number_field :stringlength, in: 1.0..15, step: 1.0 %>
+    </p>
+    <p>
+      <%= form.label :"number of tests" %><br>
+      <%= form.text_field :numberoftests %>
+    </p>
+   
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>

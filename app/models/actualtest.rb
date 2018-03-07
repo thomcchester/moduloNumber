@@ -1,0 +1,2 @@
+class Actualtest < ApplicationRecord
+end
